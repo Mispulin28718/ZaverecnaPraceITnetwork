@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PojištěníApp</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="prvniLeva" id="pojisteni-app"><a href="index.html">PojištěníApp</a></h2>
+        <h3 class="druha" id="pojistenci"><a href="pojistenci.html">Pojištěnci</a></h3>
+        <h4 class="treti" id="o-aplikaci">O aplikaci</h4>
+    </header>
+
+    <main class="bilePozadi">
+        <table>
+            <br>
+            <br>
+            <caption class="nadpisTabLeva"><h2>Pojištěnci</h2></caption>
+            <thead>
+                <tr>
+                    <th>Jméno</th>
+                    <th>Příjmení</th>
+                    <th>Telefon</th>
+                    <th>Věk</th>
+                    <th>Editovat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- sem se budou vkládat řádky tabulky pomocí JavaScriptu -->
+            </tbody>
+        </table>
+
+        <div id="novy-pojisteny">
+            <h1>Nový pojištěnec</h1>
+                <label for="photo">Foto</label>
+                <input type="file" id="photo" name="photo">
+                <div id="foto-ramecek">
+                    <img id="silueta" src="obrazky/silueta.jpg" alt="Silueta pojištěnce">
+                </div>
+            
+            <form class="vstup">
+                <div class="leva">
+                    <label for="jmeno">Jméno:</label>
+                    <input type="text" id="jmeno" name="jmeno" required>
+                    <label for="prijmeni">Příjmení:</label>
+                    <input type="text" id="prijmeni" name="prijmeni" required>
+                </div>
+
+                <div class="prava">
+                <label for="vek">Věk:</label>
+                <input type="number" id="vek" name="vek" required>
+                <label for="telefon">Telefon:</label>
+                <input type="tel" id="telefon" name="telefon" required>
+                </div>
+
+                <div class="doleUprostred">
+                <button type="submit" id="ulozit-btn">Uložit</button>
+                <br>
+                <br>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

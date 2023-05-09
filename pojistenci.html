@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PojištěníApp</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="prvniLeva" id="pojisteni-app"><a href="index.html">PojištěníApp</a></h2>
+        <h3 class="druha" id="pojistenci"><a href="pojistenci.html">Pojištěnci</a></h3>
+        <h4 class="treti" id="o-aplikaci">O aplikaci</h4>
+    </header>
+
+    <main class="bilePozadi">
+        <table>
+            <caption class="nadpisTabLeva"><h2>Seznam pojištěných</h2></caption>
+            <thead>
+                <tr>
+                    <th>Jméno a příjmení</th>
+                    <th>Telefon</th>
+                    <th>Ćíslo pojištěnce</th>
+                </tr>
+            </thead>
+            <tbody id="seznam-pojistencu">
+                <!-- sem se budou vkládat řádky tabulky pomocí JavaScriptu -->
+            </tbody>
+            <tfoot>
+                <br>
+                <br>
+            </tfoot>
+        </table>
+        <br>
+        <br>
+    </main>
+    <script src="pojistenci.js"></script>
+</body>
+
+</html>
